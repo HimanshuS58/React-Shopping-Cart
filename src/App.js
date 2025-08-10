@@ -14,7 +14,7 @@ function App() {
         <div className='w-[70%] m-auto bg-white my-4 p-10'>
           <Routes>
             <Route path='/' element={<Products />} />
-            <Route path='/*' element={<Products />} /> {/*  this path suggests dynamicrouting */}
+            <Route path='/:category' element={<Products />} /> {/*  this path suggests dynamic(:category) routing */}
             <Route path='/cart' element={<Cart />} />
             <Route path='/success' element={<Success />} />
           </Routes>
